@@ -1,5 +1,6 @@
 import styles from '../styles.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Code = (p) => <code className={styles.inlineCode} {...p} />
 
@@ -10,12 +11,13 @@ const Index = () => (
       <hr className={styles.hr} />
       <p>
         The links below are{' '}
-        <a href="https://nextjs.org/docs/api-reference/next.config.js/redirects">
-          custom <Code>redirects</Code>
-        </a>{' '}
+        <Link href="/">
+          <a>RCTI+</a>
+        </Link>
         that redirect an incoming request path to a different destination path.
       </p>
       <nav>
+      <img src="/anung-ganteng/gambar-1.jpg" />
         <ul className={styles.list}>
           <li>
             <Link href="/team">
